@@ -10,10 +10,6 @@ def three_five(no)
   return true if three(no) && five(no)
 end
 
-def three_five(no)
-  return true if three(no) && five(no)
-end
-
 def control(no)
   p "FizzBuzz" if three(no) && five(no)
   p "Fizz" if three(no) && !five(no)
