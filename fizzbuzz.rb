@@ -23,5 +23,3 @@ end
 def fizzbuzz(range)
   range.each { |i| control(i) }
 end
-
-fizzbuzz((1..10))
