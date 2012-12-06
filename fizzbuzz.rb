@@ -20,6 +20,8 @@ def control(no)
   p "Buzz" if five(no) && !three(no)
 end
 
-def fizzbuzz
-  (1..100).each { |i| control(i) }
+def fizzbuzz(range)
+  range.each { |i| control(i) }
 end
+
+fizzbuzz((1..10))
