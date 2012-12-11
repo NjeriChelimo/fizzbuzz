@@ -16,6 +16,7 @@ module FizzBuzz
       p "FizzBuzz" if three(no) && five(no)
       p "Fizz" if three(no) && !five(no)
       p "Buzz" if five(no) && !three(no)
+      p no if !three(no) && !five(no)
     end
 
     def fizzbuzz(range)
@@ -23,3 +24,5 @@ module FizzBuzz
     end
   end
 end
+f = FizzBuzz::Fizzer.new
+f.fizzbuzz(1..100)
